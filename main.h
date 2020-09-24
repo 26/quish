@@ -1,8 +1,8 @@
-//
-// Created by marijn on 9/24/20.
-//
+#ifndef _QUISH_MAIN_H
+#define _QUISH_MAIN_H
 
-#ifndef QUISH_MAIN_H
-#define QUISH_MAIN_H
+int main(int argc, const char *argv[]);
 
-#endif //QUISH_MAIN_H
+static void eval_loop(void);
+
+#endif //_QUISH_MAIN_H
