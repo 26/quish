@@ -1,16 +1,13 @@
-#include <errno.h>
-#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
 
 #include "shell.h"
 
-size_t MAX_LINE_LENGTH = 100;
-size_t MAX_ARGUMENT_COUNT = 20;
+static const size_t MAX_LINE_LENGTH = 100;
+static const size_t MAX_ARGUMENT_COUNT = 20;
 
 int main(void) {
     loop();
