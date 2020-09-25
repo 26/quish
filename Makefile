@@ -9,7 +9,7 @@ RM=rm
 all: quish
 
 quish: shell.c
-	$(CC) $(CFLAGS) main.c -o quish
+	$(CC) $(CFLAGS) shell.c -o quish
 
 install: quish
 	$(INSTALL) quish /usr/local/bin/
