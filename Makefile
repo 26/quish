@@ -4,9 +4,11 @@ RMFLAGS=-f
 CC=gcc
 RM=rm
 
-.PHONY: clean
+.PHONY: all clean
 
-quish: main.c
+all: quish
+
+quish: shell.c
 	$(CC) $(CFLAGS) main.c -o quish
 
 install: quish
